@@ -1,3 +1,5 @@
+import 'ingredient.dart';
+
 class Recipe {
   String label;
   String imageUrl;
@@ -70,12 +72,4 @@ class Recipe {
       ],
     ),
   ];
-}
-
-class Ingredient {
-  double quantity;
-  String measure;
-  String name;
-
-  Ingredient(this.quantity, this.measure, this.name);
 }

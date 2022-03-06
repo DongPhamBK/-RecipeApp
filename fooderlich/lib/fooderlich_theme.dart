@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class FooderlichTheme {
 //Kiểu chữ
-  static TextTheme lighTextTheme = TextTheme(
+  static TextTheme lightTextTheme = TextTheme(
     bodyText1: GoogleFonts.openSans(
         //cỡ chữ, độ đậm nét, màu sắc,
         fontSize: 14,
@@ -49,7 +49,7 @@ class FooderlichTheme {
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         selectedItemColor: Colors.green,
       ),
-      textTheme: lighTextTheme,
+      textTheme: lightTextTheme,
     );
   }
 

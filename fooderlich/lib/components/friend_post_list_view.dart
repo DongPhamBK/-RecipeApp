@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../components/components.dart';
 import '../models/models.dart';
-import 'friend_post_tile.dart';
 
 class FriendPostListView extends StatelessWidget {
   final List<Post> friendPosts;
@@ -29,19 +28,18 @@ class FriendPostListView extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           ListView.separated(
-            primary: false,
-            physics: const NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
-            scrollDirection: Axis.vertical,
-            itemCount: friendPosts.length,
-            itemBuilder: (context, index) {
-              final post = friendPosts[index];
-              return FriendPostTile(post: post);
-            },
-            separatorBuilder: (context, index) {
-              return const SizedBox(height: 16);
-            },
-          ),
+              primary: false,
+              physics: const NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
+              scrollDirection: Axis.vertical,
+              itemCount: friendPosts.length,
+              itemBuilder: (context, index) {
+                final post = friendPosts[index];
+                return FriendPostTile(post: post);
+              },
+              separatorBuilder: (context, index) {
+                return const SizedBox(height: 16);
+              }),
           const SizedBox(height: 16),
         ],
       ),

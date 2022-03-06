@@ -1,4 +1,3 @@
-
 class SimpleRecipe {
   String id;
   String dishImage;

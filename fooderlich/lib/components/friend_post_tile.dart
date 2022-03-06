@@ -30,10 +30,10 @@ class FriendPostTile extends StatelessWidget {
               Text(
                 '${post.timestamp} mins ago',
                 style: Theme.of(context).textTheme.bodyText1,
-              )
+              ),
             ],
           ),
-        )
+        ),
       ],
     );
   }

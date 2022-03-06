@@ -4,7 +4,6 @@ import '../api/mock_fooderlich_service.dart';
 import '../components/components.dart';
 import '../models/models.dart';
 
-//Trang lưới ô vuông
 class RecipesScreen extends StatelessWidget {
   final exploreService = MockFooderlichService();
 
